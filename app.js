@@ -72,13 +72,13 @@ function render() {
   const data = calculateProgress();
 
   // 残り日数
-  document.getElementById('daysRemaining').textContent = `今年が終わるまで：あと ${data.daysRemaining} 日`;
+  document.getElementById('daysRemaining').textContent = `あと ${data.daysRemaining} 日`;
 
   // 進捗％
-  document.getElementById('progressPercent').textContent = `進捗： ${data.progressPercent} %`;
+  document.getElementById('progressPercent').textContent = `${data.progressPercent} %`;
 
   // 経過日数
-  document.getElementById('daysFraction').textContent = `経過： ${data.daysElapsed} / ${data.totalDays} 日`;
+  document.getElementById('daysFraction').textContent = `${data.daysElapsed} / ${data.totalDays} 日`;
 
   // 補助情報
   document.getElementById('currentTime').textContent = data.currentTime;
